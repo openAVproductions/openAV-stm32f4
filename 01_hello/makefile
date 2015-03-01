@@ -22,7 +22,7 @@ clean:
 	-rm -f hello.lst *.o hello.elf hello.lst hello.bin
 
 run: hello.bin
-	$(STM32FLASH) hello.bin
+	st-flash write hello.bin 0x8000000
 
 hello.bin: hello.elf
 	@echo "...copying"
