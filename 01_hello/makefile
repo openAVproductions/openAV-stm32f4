@@ -11,8 +11,7 @@ LD       = $(CCPREFIX)ld -v
 CP       = $(CCPREFIX)objcopy
 OD       = $(CCPREFIX)objdump
 
-# -mfix-cortex-m3-ldrd should be enabled by default for Cortex M3. 
-CFLAGS  =  -I. -c -fno-common -O0 -g -mcpu=cortex-m3 -mthumb
+CFLAGS  =  -I. -c -fno-common -O0 -g -mcpu=cortex-m4 -mthumb
 LFLAGS  = -Tstm32.ld -nostartfiles
 CPFLAGS = -Obinary
 ODFLAGS = -S

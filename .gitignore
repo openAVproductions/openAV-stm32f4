@@ -1,0 +1,8 @@
+
+*.o
+*.out
+*.bin
+*.elf
+*.lst
+
+STM32F401-Discovery_FW_V1.0.0/*
